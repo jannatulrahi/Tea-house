@@ -15,42 +15,103 @@
     <!-- tailwind cnd -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <!-- main section -->
     <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
-    <!-- header section -->
-     <header class="flex pt-10 mb-20">
+      <!-- header section -->
+      <header class="lg:flex pt-10 mb-20">
         <!-- text content -->
-         <div>
-          <h1 class="text-5xl md:text-7xl">It's good <br> tea time at The <br>Tea House</h1> <br>
-          <p class="text-gray-500 w-3/4">Tea and Botanical Solutions Supplier Give Optimum Satisfaction to Your taste buds. </p>
-          <br>
-          <button class="bg-gradient-to-r from-orange-500 to-red-500 px-5 py-3 rounded-lg text-white font-bold">Explore More</button>
-         </div>
-         <!-- image content -->
-          <div class="relative">
-           <!-- image -->
-            <div>
-                <img class="w-full" src="https://www.hellokpop.com/wp-content/uploads/2020/04/IMG_20200413_123513.jpg" alt="">
-            </div>
-            <!-- card -->
-             <div class="absolute bg-white shadow-lg px-2 py-2 md:px-10 lg:py-4 rounded-lg top-28 md:top-80 md:left-32">
-                <h2 class="lg:2xl font-bold">5.00</h2>
-                <p class="text-gray-500">Trust Pilot Ratings</p>
-             </div>
+        <div>
+          <h1 class="text-5xl md:text-7xl">
+            It's good <br />
+            tea time at The <br />Tea House
+          </h1>
+          <br />
+          <p class="text-gray-500 w-3/4">
+            Tea and Botanical Solutions Supplier Give Optimum Satisfaction to
+            Your taste buds.
+          </p>
+          <br />
+          <button
+            class="bg-gradient-to-r from-orange-500 to-red-500 px-5 py-3 rounded-lg text-white font-bold mb-2"
+          >
+            Explore More
+          </button>
+        </div>
+        <!-- image content -->
+        <div class="relative">
+          <!-- image -->
+          <div>
+            <img
+              class="w-full"
+              src="https://www.hellokpop.com/wp-content/uploads/2020/04/IMG_20200413_123513.jpg"
+              alt=""
+            />
           </div>
-     </header>
+          <!-- card -->
+          <div
+            class="absolute bg-white shadow-lg px-2 py-2 md:px-10 lg:py-4 rounded-lg top-28 md:top-80 md:left-32"
+          >
+            <h2 class="lg:2xl font-bold">5.00</h2>
+            <p class="text-gray-500">Trust Pilot Ratings</p>
+          </div>
+        </div>
+      </header>
+      <!-- featured product section -->
+      <section class="py-8 lg:py-24">
+        <!-- title -->
+        <div class="text-center mb-8">
+          <h1 class="text-3xl md:text-4xl font-bold mb-5">Our Featured Products</h1>
+          <p class="text-gray-500 max-w-xl mx-auto">
+            There are many variations of Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Debitis, molestiae. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Numquam, aliquid?
+          </p>
+        </div>
+        <!-- grid card -->
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+            <!-- product card -->
+            <div class="rounded-lg shadow-md bg-gray-30 overflow-hidden">
+                <img class="mx-auto pt-4" src="https://cdn.doordash.com/media/photos/97d027f7-7150-4349-919c-4031af4e804c-retina-large.jpg" alt="">
+                <div class="p-4">
+                    <h2 class="font-bold text-xl">Black Tea</h2>
+                    <p class="text-gray-600">Creamer could be replaced by fresh milk</p>
+                </div>
+             </div>
+             <div class="rounded-lg shadow-md bg-gray-30 overflow-hidden">
+                <img class="mx-auto pt-4" src="https://cdn.doordash.com/media/photos/a84c7571-1540-4c2a-8681-d8214d645b37-retina-large.jpg" alt="">
+                <div class="p-4">
+                    <h2 class="font-bold text-xl">Lemon Tea</h2>
+                    <p class="text-gray-600">Creamer could be replaced by fresh milk</p>
+                </div>
+             </div>
+             <div class="rounded-lg shadow-md bg-gray-30 overflow-hidden">
+                <img class="mx-auto pt-4" src="https://cdn.doordash.com/media/photos/8a6e29ea-5599-4db4-b39b-1112d0ac460a-retina-large.jpg" alt="">
+                <div class="p-4">
+                    <h2 class="font-bold text-xl">Rose Tea</h2>
+                    <p class="text-gray-600">Creamer could be replaced by fresh milk</p>
+                </div>
+             </div>
+             <div class="rounded-lg shadow-md bg-gray-30 overflow-hidden">
+                <img class="mx-auto pt-4" src="https://image.entabe.jp/upload/20210521/images/gongcha3.jpg" alt="">
+                <div class="p-4">
+                    <h2 class="font-bold text-xl"> Special Tea</h2>
+                    <p class="text-gray-600">Creamer could be replaced by fresh milk</p>
+                </div>
+             </div>
+         </div>
+      </section>
     </main>
   </body>
 </html>
